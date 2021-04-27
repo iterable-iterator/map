@@ -11,6 +11,14 @@ See [docs](https://iterable-iterator.github.io/map/index.html).
 > `regeneratorRuntime` to be defined, for instance by importing
 > [regenerator-runtime/runtime](https://www.npmjs.com/package/regenerator-runtime).
 
+```js
+import {zip, count} from '@aureooms/js-itertools';
+import {truth, mul} from '@aureooms/js-operator';
+import {map, starmap} from '@iterable-itertools/map';
+map( truth , [ 0 , 1 , null , undefined , "A" ] ) ; // F T F F T
+starmap( mul , zip( count( 0 , 1 ) , count( 0 , 1 ) ) ) ; // 0 1 4 9 16 25 36 ...
+```
+
 [![License](https://img.shields.io/github/license/iterable-iterator/map.svg)](https://raw.githubusercontent.com/iterable-iterator/map/main/LICENSE)
 [![Version](https://img.shields.io/npm/v/@iterable-iterator/map.svg)](https://www.npmjs.org/package/@iterable-iterator/map)
 [![Tests](https://img.shields.io/github/workflow/status/iterable-iterator/map/ci:test?event=push&label=tests)](https://github.com/iterable-iterator/map/actions/workflows/ci:test.yml?query=branch:main)
