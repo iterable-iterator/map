@@ -1,0 +1,17 @@
+{
+  "coverage": "100%",
+  "expectCount": 2,
+  "actualCount": 2,
+  "files": {
+    "src/map.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/starmap.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    }
+  }
+}
