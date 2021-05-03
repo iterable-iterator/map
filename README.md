@@ -10,7 +10,7 @@ See [docs](https://iterable-iterator.github.io/map/index.html).
 
 ```js
 import {zip, count} from '@aureooms/js-itertools';
-import {truth, mul} from '@aureooms/js-operator';
+import {truth, mul} from '@functional-abstraction/operator';
 import {map, starmap} from '@iterable-itertools/map';
 map( truth , [ 0 , 1 , null , undefined , "A" ] ) ; // F T F F T
 starmap( mul , zip( count( 0 , 1 ) , count( 0 , 1 ) ) ) ; // 0 1 4 9 16 25 36 ...

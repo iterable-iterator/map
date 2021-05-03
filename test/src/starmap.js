@@ -1,6 +1,6 @@
 import test from 'ava';
 
-import {mul} from '@aureooms/js-operator';
+import {mul} from '@functional-abstraction/operator';
 import {starmap} from '../../src/index.js';
 
 test('starmap', (t) => {

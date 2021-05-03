@@ -2,11 +2,6 @@
 # yarn lockfile v1
 
 
-"@aureooms/js-operator@1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@aureooms/js-operator/-/js-operator-1.0.2.tgz#0786d77d9977823ae7bc04360a315c45bb4c1e65"
-  integrity sha1-B4bXfZl3gjrnvAQ2CjFcRbtMHmU=
-
 "@babel/code-frame@7.12.11":
   version "7.12.11"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.12.11.tgz#f4ad435aa263db935b8f10f2c552d23fb716a63f"
@@ -1350,6 +1345,11 @@
     js-yaml "^3.13.1"
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
+
+"@functional-abstraction/operator@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@functional-abstraction/operator/-/operator-1.0.4.tgz#6bcc9ef381fd8897f8fa2f10a05df208558e9519"
+  integrity sha512-YtWuVroQ4l9YXSu8E0PqVguI/5jf2O34lMa3KILPT7zAsCWrC+2hGDHd58FJu5FIej8V5cRgRvczSsf/vmTXNw==
 
 "@istanbuljs/schema@^0.1.2":
   version "0.1.3"
