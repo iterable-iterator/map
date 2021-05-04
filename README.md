@@ -9,7 +9,8 @@ See [docs](https://iterable-iterator.github.io/map/index.html).
 > [regenerator-runtime/runtime](https://www.npmjs.com/package/regenerator-runtime).
 
 ```js
-import {zip, count} from '@aureooms/js-itertools';
+import {zip} from '@iterable-iterator/zip';
+import {count} from '@iterable-iterator/count';
 import {truth, mul} from '@functional-abstraction/operator';
 import {map, starmap} from '@iterable-itertools/map';
 map( truth , [ 0 , 1 , null , undefined , "A" ] ) ; // F T F F T
