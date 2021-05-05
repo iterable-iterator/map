@@ -6,6 +6,12 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
+    "@iterable-iterator/map/src/pick.js~pick",
+    "function/index.html#static-function-pick",
+    "<span>pick</span> <span class=\"search-result-import-path\">@iterable-iterator/map/src/pick.js</span>",
+    "function"
+  ],
+  [
     "@iterable-iterator/map/src/starmap.js~starmap",
     "function/index.html#static-function-starmap",
     "<span>starmap</span> <span class=\"search-result-import-path\">@iterable-iterator/map/src/starmap.js</span>",
@@ -303,6 +309,12 @@ window.esdocSearchIndex = [
     "src/map.js",
     "file/src/map.js.html",
     "src/map.js",
+    "file"
+  ],
+  [
+    "src/pick.js",
+    "file/src/pick.js.html",
+    "src/pick.js",
     "file"
   ],
   [

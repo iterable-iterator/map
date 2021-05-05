@@ -1,9 +1,14 @@
 {
   "coverage": "100%",
-  "expectCount": 2,
-  "actualCount": 2,
+  "expectCount": 3,
+  "actualCount": 3,
   "files": {
     "src/map.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "src/pick.js": {
       "expectCount": 1,
       "actualCount": 1,
       "undocumentLines": []

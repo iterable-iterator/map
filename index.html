@@ -30,6 +30,7 @@
   <ul>
     
   <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-map">map</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-pick">pick</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-starmap">starmap</a></span></span></li>
 </ul>
 </div>
@@ -42,11 +43,19 @@ See <a href="https://iterable-iterator.github.io/map/index.html">docs</a>.</p>
 <code>regeneratorRuntime</code> to be defined, for instance by importing
 <a href="https://www.npmjs.com/package/regenerator-runtime">regenerator-runtime/runtime</a>.</p>
 </blockquote>
-<pre><code class="lang-js"><code class="source-code prettyprint">import {zip, count} from &apos;@aureooms/js-itertools&apos;;
-import {truth, mul} from &apos;@aureooms/js-operator&apos;;
-import {map, starmap} from &apos;@iterable-itertools/map&apos;;
+<pre><code class="lang-js"><code class="source-code prettyprint">import {truth} from &apos;@functional-abstraction/operator&apos;;
+import {map} from &apos;@iterable-iterator/map&apos;;
 map( truth , [ 0 , 1 , null , undefined , &quot;A&quot; ] ) ; // F T F F T
-starmap( mul , zip( count( 0 , 1 ) , count( 0 , 1 ) ) ) ; // 0 1 4 9 16 25 36 ...</code>
+
+import {mul} from &apos;@functional-abstraction/operator&apos;;
+import {zip} from &apos;@iterable-iterator/zip&apos;;
+import {count} from &apos;@iterable-iterator/count&apos;;
+import {starmap} from &apos;@iterable-iterator/map&apos;;
+starmap( mul , zip( count( 0 , 1 ) , count( 0 , 1 ) ) ) ; // 0 1 4 9 16 25 36 ...
+
+import {range} from &apos;@iterable-iterator/range&apos;;
+import {pick} from &apos;@iterable-iterator/map&apos;;
+pick(&quot;ABCD&quot;, range(2)); // A B</code>
 </code></pre>
 <p><a href="https://raw.githubusercontent.com/iterable-iterator/map/main/LICENSE"><img src="https://img.shields.io/github/license/iterable-iterator/map.svg" alt="License"></a>
 <a href="https://www.npmjs.org/package/@iterable-iterator/map"><img src="https://img.shields.io/npm/v/@iterable-iterator/map.svg" alt="Version"></a>
