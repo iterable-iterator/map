@@ -9,12 +9,19 @@ See [docs](https://iterable-iterator.github.io/map/index.html).
 > [regenerator-runtime/runtime](https://www.npmjs.com/package/regenerator-runtime).
 
 ```js
+import {truth} from '@functional-abstraction/operator';
+import {map} from '@iterable-iterator/map';
+map( truth , [ 0 , 1 , null , undefined , "A" ] ) ; // F T F F T
+
+import {mul} from '@functional-abstraction/operator';
 import {zip} from '@iterable-iterator/zip';
 import {count} from '@iterable-iterator/count';
-import {truth, mul} from '@functional-abstraction/operator';
-import {map, starmap} from '@iterable-itertools/map';
-map( truth , [ 0 , 1 , null , undefined , "A" ] ) ; // F T F F T
+import {starmap} from '@iterable-iterator/map';
 starmap( mul , zip( count( 0 , 1 ) , count( 0 , 1 ) ) ) ; // 0 1 4 9 16 25 36 ...
+
+import {range} from '@iterable-iterator/range';
+import {pick} from '@iterable-iterator/map';
+pick("ABCD", range(2)); // A B
 ```
 
 [![License](https://img.shields.io/github/license/iterable-iterator/map.svg)](https://raw.githubusercontent.com/iterable-iterator/map/main/LICENSE)
