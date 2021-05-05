@@ -1,17 +1,23 @@
 import test from 'ava';
 
+import {repr, pow2} from './_fixtures.js';
+
 import {map} from '../../src/index.js';
 
-test('map', (t) => {
-	const x = function (callable, iterable, out) {
-		t.deepEqual(Array.from(map(callable, iterable)), out);
-	};
+const macro = (t, callable, iterable, expected) => {
+	t.deepEqual(Array.from(map(callable, iterable)), expected);
+};
 
-	const pow2 = (x) => x * x;
+macro.title = (title, callable, iterable, expected) =>
+	title ?? `map(${callable.name}, ${repr(iterable)}) is ${repr(expected)}`;
 
-	x(pow2, [], []);
-	x(pow2, [1], [1]);
-	x(pow2, [1, 2, 3], [1, 4, 9]);
-	x(pow2, [1, 2, 3, 4, 5, 6], [1, 4, 9, 16, 25, 36]);
-	x(pow2, [1, 2, 3, 4, 5, 6, 7, 8, 9], [1, 4, 9, 16, 25, 36, 49, 64, 81]);
-});
+test(macro, pow2, [], []);
+test(macro, pow2, [1], [1]);
+test(macro, pow2, [1, 2, 3], [1, 4, 9]);
+test(macro, pow2, [1, 2, 3, 4, 5, 6], [1, 4, 9, 16, 25, 36]);
+test(
+	macro,
+	pow2,
+	[1, 2, 3, 4, 5, 6, 7, 8, 9],
+	[1, 4, 9, 16, 25, 36, 49, 64, 81],
+);
