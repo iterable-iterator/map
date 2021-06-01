@@ -6,14 +6,14 @@
 
 First, require the polyfill at the entry point of your application
 ```js
-require( 'regenerator-runtime/runtime' ) ;
+await import( 'regenerator-runtime/runtime.js' ) ;
 // or
 import 'regenerator-runtime/runtime.js' ;
 ```
 
 Then, import the library where needed
 ```js
-const map = require( '@iterable-iterator/map' ) ;
+const map = await import( '@iterable-iterator/map' ) ;
 // or
 import * as map from '@iterable-iterator/map' ;
 ```
