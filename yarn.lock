@@ -1886,10 +1886,10 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@functional-abstraction/operator@2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@functional-abstraction/operator/-/operator-2.0.0.tgz#2a3d1ff96d512436154a81ca5a2115c01a4a25d5"
-  integrity sha512-0G6kiCf87IdYoETEKkfz/W+Xt8ZjG/Ch3z5YrdEltcUuQ8YiKchoY27LXF4tfOLHlVPiOD8iHPFv3lFYrBn3kg==
+"@functional-abstraction/operator@3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@functional-abstraction/operator/-/operator-3.0.0.tgz#afa5f4f445a0147a13d5b19015cc1d9373e26b1a"
+  integrity sha512-Jbf4htiKYk/qa/2Tv0U2KRrfquEPeQ+Bv2CWYYw6kYyJqNlH1hlXi6L8SdQXNs88oyly9Ok994jtwLTwNUFaSg==
 
 "@istanbuljs/schema@^0.1.2":
   version "0.1.3"
