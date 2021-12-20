@@ -1,8 +1,7 @@
 import test from 'ava';
 
-import {repr, pow2} from './_fixtures.js';
-
 import {map} from '../../src/index.js';
+import {repr, pow2} from './_fixtures.js';
 
 const macro = (t, callable, iterable, expected) => {
 	t.deepEqual(Array.from(map(callable, iterable)), expected);
