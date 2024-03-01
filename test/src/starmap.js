@@ -1,7 +1,7 @@
 import test from 'ava';
 
-import {starmap} from '../../src/index.js';
 import {repr, mul} from './_fixtures.js';
+import {starmap} from '#module';
 
 const macro = (t, callable, iterable, expected) => {
 	t.deepEqual(Array.from(starmap(callable, iterable)), expected);

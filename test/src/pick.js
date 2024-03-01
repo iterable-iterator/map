@@ -3,8 +3,8 @@ import test from 'ava';
 import {list} from '@iterable-iterator/list';
 import {range} from '@iterable-iterator/range';
 
-import {map, pick} from '../../src/index.js';
 import {repr} from './_fixtures.js';
+import {map, pick} from '#module';
 
 const macro = (t, object, iterable, expected) => {
 	t.deepEqual(Array.from(pick(object, iterable)), expected);
