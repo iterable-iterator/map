@@ -4,6 +4,7 @@ import {list} from '@iterable-iterator/list';
 import {range} from '@iterable-iterator/range';
 
 import {repr} from './_fixtures.js';
+
 import {map, pick} from '#module';
 
 const macro = (t, object, iterable, expected) => {
