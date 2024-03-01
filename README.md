@@ -26,7 +26,7 @@ pick("ABCD", range(2)); // A B
 
 [![License](https://img.shields.io/github/license/iterable-iterator/map.svg)](https://raw.githubusercontent.com/iterable-iterator/map/main/LICENSE)
 [![Version](https://img.shields.io/npm/v/@iterable-iterator/map.svg)](https://www.npmjs.org/package/@iterable-iterator/map)
-[![Tests](https://img.shields.io/github/workflow/status/iterable-iterator/map/ci?event=push&label=tests)](https://github.com/iterable-iterator/map/actions/workflows/ci.yml?query=branch:main)
+[![Tests](https://img.shields.io/github/actions/workflow/status/iterable-iterator/map/ci.yml?branch=main&event=push&label=tests)](https://github.com/iterable-iterator/map/actions/workflows/ci.yml?query=branch:main)
 [![Dependencies](https://img.shields.io/librariesio/github/iterable-iterator/map.svg)](https://github.com/iterable-iterator/map/network/dependencies)
 [![GitHub issues](https://img.shields.io/github/issues/iterable-iterator/map.svg)](https://github.com/iterable-iterator/map/issues)
 [![Downloads](https://img.shields.io/npm/dm/@iterable-iterator/map.svg)](https://www.npmjs.org/package/@iterable-iterator/map)
